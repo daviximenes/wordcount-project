@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h1>WORD COUNT</h1>
+    <h2> There are {{ count }} words in your text</h2>
+
+    <a href = "{% url 'home' %}">Start Again</a> <!-- <a> tag funciona para fazer algo clicavel -->
+
+    <ul>
+    {% for word, counttotal in wordcountdict.items %}
+
+        <li>"{{ word }}" -- {{ counttotal }}</li>
+
+    {% endfor %}
+</ul>
+</body>
+</html>
+
+

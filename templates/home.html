@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Word Count</title>
+</head>
+<body>
+    <h1>WORD COUNT</h1>
+    <form action="{% url 'count' %}">
+        <textarea cols="40" rows="10" name="fulltext"></textarea>  <!-- Criando uma area para texto e seus atributos com nome fulltext -->
+        <br>
+        <input type="submit" value="Count!" />
+    </form>
+        <br/>
+    <form action="{% url 'about' %}">
+       <input type="submit" value="About Me!"/>
+    </form>
+</body>
+</html>
